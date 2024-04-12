@@ -16,7 +16,7 @@ const Card = ({ bg_color, logo, name, name_color, padding_top, content }: { bg_c
                 <div className='flex flex-col'>
                 {content.map((link, index)=>{
                     return (
-                        <img src={`/images/projets/${link}`} alt={'Project content'} className="mb-4 max-w-full h-auto"/>
+                        <img src={`/images/projets/${link}`} alt={'Project content'} key={index} className="mb-4 max-w-full h-auto"/>
                     )
                 })}
                 </div>
