@@ -31,8 +31,6 @@ export default function Home() {
         <Card bg_color={"#718B75"} logo={<Moca />} name={"Brand design"} name_color={"white"} padding_top={"140"} content={contentMoca} />
         <Card bg_color={"#1D252D"} logo={<AresDomus />} name={"Brand design"} name_color={"white"} padding_top={"132"} content={contentAresDomus} />      
       </div>
-
-
     </main>
   );
 }

@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import Modal from "@/components/Modal";
-import Image from 'next/image';
 
 const Card = ({ bg_color, logo, name, name_color, padding_top, content }: { bg_color: string, logo: any, name: string, name_color: string, padding_top: string, content:string[] }) => {
     const [isModalOpen, setModalOpen] = useState(false);
