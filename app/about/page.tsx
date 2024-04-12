@@ -23,7 +23,7 @@ function page() {
                             </div>
                             <div className='flex flex-col gap-4'>
                                 <h2 className='uppercase text-xs font-bold tracking-[6px]'>Softwares</h2>
-                                <div className='flex justify-between'>
+                                <div className='flex gap-8'>
                                     <Figma />
                                     <Photoshop />
                                     <Lightroom />
