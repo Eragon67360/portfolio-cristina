@@ -16,7 +16,7 @@ const Card = ({ bg_color, logo, name, name_color, padding_top, content }: { bg_c
                 }}
                 className="flex flex-col justify-between items-center gap-8 group cursor-pointer"
                 onClick={() => setModalOpen(true)}>
-                <div className="flex items-center justify-center group-hover:scale-105 transition-all duration-200">{logo}</div>
+                <div className="flex items-center justify-center group-hover:scale-110 transition-all duration-200">{logo}</div>
                 <h2 className={`uppercase text-xs tracking-[6px] text-center text-${name_color}`}>{name}</h2>
             </div>
 

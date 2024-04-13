@@ -26,7 +26,7 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
         <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center p-4 z-50 overflow-y-auto">
             <div className="relative">
                 {/* Modal Box */}
-                <div className="bg-transparent rounded-lg w-[1440px] max-w-[1440px] overflow-y-auto max-h-[90vh]" style={{ maxHeight: '90vh' }}>
+                <div className="bg-transparent rounded-lg 2xl:w-[1300px] xl:w-[1100px] lg:w-[900px] md:w-[700px] overflow-y-auto transition-all duration-300" style={{ maxHeight: '90vh' }}>
                     {children}
                 </div>
                 {/* Close Button */}
