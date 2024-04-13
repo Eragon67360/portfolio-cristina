@@ -1,8 +1,9 @@
 'use client'
 import React, { useState } from 'react'
 import Modal from "@/components/Modal";
+import Image from 'next/image';
 
-const Card = ({ bg_color, logo, name, name_color, padding_top, content }: { bg_color: string, logo: any, name: string, name_color: string, padding_top: number, content: string[] }) => {
+const Card = ({ bg_color, logo, name, name_color, padding_top, content }: { bg_color: string, logo: string, name: string, name_color: string, padding_top: number, content: string[] }) => {
     const [isModalOpen, setModalOpen] = useState(false);
 
     return (
@@ -16,7 +17,9 @@ const Card = ({ bg_color, logo, name, name_color, padding_top, content }: { bg_c
                 }}
                 className="flex flex-col justify-between items-center gap-8 group cursor-pointer"
                 onClick={() => setModalOpen(true)}>
-                <div className="flex items-center justify-center group-hover:scale-110 transition-all duration-200">{logo}</div>
+                <div className="flex items-center justify-center group-hover:scale-110 transition-all duration-200 px-8">
+                    <img src={`/images/${logo}`} alt='Logo'/>
+                </div>
                 <h2 className={`uppercase text-xs tracking-[6px] text-center text-${name_color}`}>{name}</h2>
             </div>
 

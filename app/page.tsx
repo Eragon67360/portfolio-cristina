@@ -7,6 +7,7 @@ import Montezuma from "@/components/Logos/Montezuma";
 import Moca from "@/components/Logos/Moca";
 import Sakana from "@/components/Logos/Sakana";
 import smurfit from '@/public/images/smurfit.png';
+import projets from '@/public/json/projets.json'
 
 import Card from "@/components/Card";
 const contentAresDomus = ['Portfolio_cristina_page-0004.jpg', 'Portfolio_cristina_page-0005.jpg', 'Portfolio_cristina_page-0006.jpg']
@@ -21,16 +22,23 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
 
       <div className="max-w-[1440px] w-[1440px] grid grid-cols-3">
+        {/* <Card bg_color={"#E2E2DB"} logo={<MainLogo />} name={"Next Project"} name_color={"black"} padding_top={132} content={contentAresDomus} />
         <Card bg_color={"#E2E2DB"} logo={<MainLogo />} name={"Next Project"} name_color={"black"} padding_top={132} content={contentAresDomus} />
-        <Card bg_color={"#E2E2DB"} logo={<MainLogo />} name={"Next Project"} name_color={"black"} padding_top={132} content={contentAresDomus} />
-        <Card bg_color={"#E2E2DB"} logo={<MainLogo />} name={"Next Project"} name_color={"black"} padding_top={132} content={contentAresDomus} />
+        <Card bg_color={"#E2E2DB"} logo={<MainLogo />} name={"Next Project"} name_color={"black"} padding_top={132} content={contentAresDomus} /> */}
 
-        <Card bg_color={"#000"} logo={<Curefab />} name={"Website redesign"} name_color={"white"} padding_top={192} content={contentAresDomus} />
+        {projets.map((projet, index) => {
+          return (
+            <Card key={index} bg_color={projet.bg_color} logo={projet.logo} name={projet.name} name_color={projet.name_color} padding_top={projet.padding_top} content={projet.content} />
+          )
+        })}
+
+
+        {/* <Card bg_color={"#000"} logo={<Curefab />} name={"Website redesign"} name_color={"white"} padding_top={192} content={contentAresDomus} />
         <Card bg_color={"#597177"} logo={<Sakana />} name={"Swiss watch design"} name_color={"white"} padding_top={124} content={contentSakana} />
         <Card bg_color={"#FFF"} logo={<Image src={smurfit} alt="smurfit logo" width={279} height={79} />} name={"Packaging design"} name_color={"black"} padding_top={196} content={contentSmurfkit} />
         <Card bg_color={"#91A399"} logo={<Montezuma />} name={"Marketing strategy + packaging design"} name_color={"black"} padding_top={156} content={contentMontezuma} />
         <Card bg_color={"#718B75"} logo={<Moca />} name={"Brand design"} name_color={"white"} padding_top={140} content={contentMoca} />
-        <Card bg_color={"#1D252D"} logo={<AresDomus />} name={"Brand design"} name_color={"white"} padding_top={132} content={contentAresDomus} />
+        <Card bg_color={"#1D252D"} logo={<AresDomus />} name={"Brand design"} name_color={"white"} padding_top={132} content={contentAresDomus} /> */}
       </div>
     </main>
   );
