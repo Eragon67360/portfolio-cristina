@@ -2,11 +2,9 @@
 import React from 'react'
 import Link from 'next/link'
 import MainLogo from './Logos/MainLogo'
-import Email from './Logos/Email'
-import Appointment from './Logos/Appointment'
 import { usePathname } from 'next/navigation'
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
-
+import { Modal, useDisclosure } from "@nextui-org/react";
+import ModalContentContact from './ModalContentContact'
 
 
 const Header = () => {
@@ -32,37 +30,7 @@ const Header = () => {
                     <Link href={'/about'} className={`pb-1 uppercase text-xs tracking-[6px] hover:border-b hover:border-black transition-all duration-300 ${isActive('/about') ? 'font-bold' : 'font-normal'}`}>About me</Link>
                     <button onClick={onOpen} className='pb-1 uppercase text-xs tracking-[6px] hover:border-b hover:border-black transition-all duration-300 font-normal'>Contact</button>
                     <Modal backdrop='blur' isOpen={isOpen} onOpenChange={onOpenChange}>
-                        <ModalContent>
-                            {(onClose) => (
-                                <>
-                                    <ModalHeader className="flex flex-col gap-1">Contact</ModalHeader>
-                                    <ModalBody>
-                                        <div className='flex flex-col gap-2'>
-                                            <a href="mailto:cristina.andresrr@gmail.com" className='flex gap-4 px-4 py-3 items-center rounded-lg hover:bg-black/5 transition-all duration-300'>
-                                                <div className='scale-90'>
-                                                    <Email />
-                                                </div>
-                                                <span>cristina.andresrr@gmail.com</span>
-                                            </a>
-                                            <a href="https://calendly.com/cristina-andresrr/30min" target='_blank' className='flex gap-4 px-4 py-3 items-center rounded-lg hover:bg-black/5 transition-all duration-300'>
-                                                <div className='scale-90'>
-                                                    <Appointment />
-                                                </div>
-                                                <span>Book an appointment</span>
-                                            </a>
-
-                                        </div>
-
-
-                                    </ModalBody>
-                                    <ModalFooter>
-                                        <Button color="danger" variant="light" onPress={onClose}>
-                                            Close
-                                        </Button>
-                                    </ModalFooter>
-                                </>
-                            )}
-                        </ModalContent>
+                        <ModalContentContact />
                     </Modal>
                 </div>
 

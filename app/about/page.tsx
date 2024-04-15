@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
@@ -7,6 +8,8 @@ import Photoshop from '@/components/Logos/Photoshop'
 import Lightroom from '@/components/Logos/Lightroom'
 import Illustrator from '@/components/Logos/Illustrator'
 import InDesign from '@/components/Logos/InDesign'
+
+import ShareButton from '@/components/ShareButton'
 
 function page() {
     return (
@@ -77,8 +80,8 @@ function page() {
 
                     </div>
                     <div className='flex gap-4 justify-end items-end w-full'>
-                        <Link href={''} className='uppercase text-white text-xs bg-black rounded-lg p-[10px] hover:bg-black/75'>Share</Link>
-                        <Link href={''} className='uppercase text-white text-xs bg-black rounded-lg p-[10px] hover:bg-black/75'>Download CV</Link>
+                        <ShareButton />
+                        <Link href={'/pdf/CV.pdf'} target='_blank' className='uppercase text-white text-xs bg-black rounded-lg p-[10px] hover:bg-black/75'>Download CV</Link>
                     </div>
 
                 </div>
