@@ -17,7 +17,7 @@ function page() {
             <div className='w-full bg-[#E2E2DB] flex flex-col items-center pt-[124px] pb-[197px]'>
                 <div className='w-[1440px] flex flex-col items-center px-[152px] gap-10'>
                     <div className='flex'>
-                        <Image src={profilePic} alt='Profile pic' width={246} height={328} className='rounded-[16px] grayscale' />
+                        <Image src={profilePic} alt='Profile pic' width={246} height={328} className='rounded-[16px] grayscale hover:grayscale-0 transition-all duration-250' />
 
                         <div className='flex flex-col justify-between pl-[42px] pr-[16px] border-r border-black w-full'>
                             <div className='flex flex-col gap-5'>

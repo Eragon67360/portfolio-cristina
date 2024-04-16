@@ -2,6 +2,7 @@
     {
         "bg_color": "#E2E2DB",
         "logo": "main_logo.svg",
+        "complete_name":"This is a new project",
         "name": "New project",
         "name_color": "black",
         "padding_top": 132,
@@ -10,6 +11,7 @@
     {
         "bg_color": "#E2E2DB",
         "logo": "main_logo.svg",
+        "complete_name":"This is a new project",
         "name": "New project",
         "name_color": "black",
         "padding_top": 132,
@@ -18,6 +20,7 @@
     {
         "bg_color": "#E2E2DB",
         "logo": "main_logo.svg",
+        "complete_name":"This is a new project",
         "name": "New project",
         "name_color": "black",
         "padding_top": 132,
@@ -26,6 +29,7 @@
     {
         "bg_color": "#000",
         "logo": "curefab.svg",
+        "complete_name":"Website for Curefab Technologies GmbH",
         "name": "Website redesign",
         "name_color": "white",
         "padding_top": 192,
@@ -34,6 +38,7 @@
     {
         "bg_color": "#597177",
         "logo": "sakana.svg",
+        "complete_name":"Design for a Swiss watch",
         "name": "Swiss watch design",
         "name_color": "white",
         "padding_top": 124,
@@ -42,6 +47,7 @@
     {
         "bg_color": "#FFF",
         "logo": "smurfit.png",
+        "complete_name":"Smurfit packaging design",
         "name": "Packaging design",
         "name_color": "black",
         "padding_top": 196,
@@ -50,6 +56,7 @@
     {
         "bg_color": "#91A399",
         "logo": "montezuma.svg",
+        "complete_name":"Montezuma: a new marketing strategy",
         "name": "Marketing strategy + packaging design",
         "name_color": "black",
         "padding_top": 156,
@@ -58,6 +65,7 @@
     {
         "bg_color": "#718B75",
         "logo": "moca.svg",
+        "complete_name":"Design of a new brand",
         "name": "Brand design",
         "name_color": "white",
         "padding_top": 140,
@@ -66,6 +74,7 @@
     {
         "bg_color": "#1D252D",
         "logo": "aresdomus.svg",
+        "complete_name":"Design of a amazing brand",
         "name": "Brand design",
         "name_color": "white",
         "padding_top": 132,

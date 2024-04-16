@@ -55,7 +55,7 @@ const ModalContentSocials = () => {
                                         <div className='flex items-center justify-center'>
                                             <TwitterShareButton
                                                 url={currentUrl}
-                                                title={'Go see Cristinas Portfolio ASAP !'}
+                                                title={'Go see Cristinas Portfolio ASAP !'}                                                
                                                 hashtags={['portfolio', 'cristinaandres', 'design', 'uxdesigner']}
                                             >
                                                 <TwitterIcon className='hover:opacity-80 hover:scale-105 transition-all duration-300' size={46} round />
@@ -68,6 +68,7 @@ const ModalContentSocials = () => {
                                         <div className='flex items-center justify-center'>
                                             <LinkedinShareButton
                                                 url={currentUrl}
+                                                
                                             >
                                                 <LinkedinIcon className='hover:opacity-80 hover:scale-105 transition-all duration-300' size={46} round />
                                             </LinkedinShareButton>
