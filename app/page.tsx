@@ -4,9 +4,9 @@ import Card from "@/components/Card";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex flex-col items-center justify-between">
 
-      <div className="max-w-[1440px] w-[95dvw] flex flex-wrap">
+      <div className="max-w-screen w-width flex flex-wrap">
 
         {projets.map((projet, index) => {
           return (

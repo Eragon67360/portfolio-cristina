@@ -13,10 +13,10 @@ const Card = ({ bg_color, logo, name, name_color, complete_name, content }: { bg
                     paddingBottom: '92px',
                     backgroundColor: bg_color,
                 }}
-                className="relative aspect-square flex flex-col justify-end items-center gap-12 group cursor-pointer size-full sm:size-full md:size-1/2 lg:size-1/2 xl:size-1/3 2xl:size-1/3 transition-all duration-250"
+                className="relative aspect-square flex flex-col justify-end items-center gap-12 group cursor-pointer size-full sm:size-full md:size-1/2 lg:size-1/2 xl:size-1/3 2xl:size-1/4 3xl:size-1/5 4xl:size-1/6 transition-all duration-250"
                 onClick={() => setModalOpen(true)}>
-                <div className="flex items-center justify-center group-hover:scale-110 transition-all duration-200 px-8">
-                    <img src={`/images/${logo}`} alt='Logo' />
+                <div className="flex items-center justify-center px-8 scale-80">
+                    <img src={`/images/${logo}`} alt='Logo' className='group-hover:scale-110 transition-all duration-200'/>
                 </div>
                 <h2 className={`uppercase text-xs tracking-[6px] text-center text-${name_color}`}>{name}</h2>
 
