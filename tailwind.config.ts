@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 const { nextui } = require("@nextui-org/react");
+const plugin = require('tailwindcss/plugin')
 
 const config: Config = {
   content: [
@@ -10,6 +11,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'clampTitle': 'clamp(32px, 3.8889vw, 56px)',
+        'clampContent': 'clamp(12px, 1.111vw, 16px)',
+        'clampBody': 'clamp(360px, 1vw, 1380px)',
+        'clampTextBox': 'clamp(12px, 1.111vw, 16px)'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,8 +24,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [nextui({
-    addCommonColors: true,
-  }),],
+  plugins: [
+    nextui({
+      addCommonColors: true,
+    }),    
+  ],
 };
 export default config;

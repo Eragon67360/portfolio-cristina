@@ -28,10 +28,10 @@ const Card = ({ bg_color, logo, name, name_color, complete_name, content }: { bg
             </div>
 
             <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
-                <div className='flex flex-col'>
+                <div className='flex flex-col gap-4'>
                     {content.map((link, index) => {
                         return (
-                            <img src={`/images/projets/${link}`} alt={'Project content'} key={index} className="mb-4 max-w-full h-auto" />
+                            <img src={`/images/projets/${link}`} alt={'Project content'} key={index} className="max-w-full h-auto" />
                         )
                     })}
                 </div>

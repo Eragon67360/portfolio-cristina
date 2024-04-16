@@ -4,15 +4,14 @@ function page() {
     return (
         <>
             <div className='w-full bg-[#E2E2DB] flex flex-col items-center pt-28 pb-[196px]'>
-
-                <div className='w-[1440px] flex flex-col items-center gap-[78px]'>
-                    <div className='flex flex-col gap-4 items-center'>
-                        <h1 className='text-[56px] font-bold leading-[60px] text-center'>Skills & Services</h1>
-                        <p className='text-center text-[#111827] opacity-50 w-[654px]'>Leveraging expertise in industrial design, graphic design, and burgeoning proficiency in UX/UI, I offer comprehensive solutions that seamlessly blend form, function, and user-centric design principles to bring your vision to life with creativity.</p>
+                <div className='w-clampBody flex flex-col items-center gap-[78px] '>
+                    <div className='flex flex-col gap-4 items-center px-32 '>
+                        <h1 className='text-clampTitle font-bold leading-[60px] text-center '>Skills & Services</h1>
+                        <p className='text-clampContent text-center text-[#111827] opacity-50 w-[363px] sm:w-[400px] md:w-[450px] lg:w-[500px] xl:w-[575px] 2xl:w-[654px]'>Leveraging expertise in industrial design, graphic design, and burgeoning proficiency in UX/UI, I offer comprehensive solutions that seamlessly blend form, function, and user-centric design principles to bring your vision to life with creativity.</p>
                     </div>
 
-                    <div className='flex gap-5 px-[280px]'>
-                        <div className='flex flex-col items-center py-12 px-4 bg-white rounded-[10px] w-full hover:shadow-sm hover:scale-105 transition-all duration-200'>
+                    <div className='flex flex-wrap gap-5 px-[280px] justify-center transition-all duration-150'>
+                        <div className='aspect-square flex flex-col items-center py-12 px-4 bg-white rounded-[10px] size-[280px] hover:shadow-sm hover:scale-105 transition-all duration-200'>
                             <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect y="0.48645" width="50" height="50" rx="10" fill="#9FB2C7" />
                                 <g clipPath="url(#clip0_2_8934)">
@@ -31,7 +30,7 @@ function page() {
                             <h2 className='text-2xl font-medium mt-8'>Grapic Design</h2>
                             <p className='text-center text-[#111827] opacity-50 mt-2'>Logos, Branding, Slide Decks, Brand Guides, Blog Graphics...</p>
                         </div>
-                        <div className='flex flex-col items-center py-12 px-4 bg-white rounded-[10px] w-full hover:shadow-sm hover:scale-105 transition-all duration-200'>
+                        <div className='aspect-square flex flex-col items-center py-12 px-4 bg-white rounded-[10px] size-[280px] hover:shadow-sm hover:scale-105 transition-all duration-200'>
                             <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect y="0.48645" width="50" height="50" rx="10" fill="#9FB2C7" />
                                 <g clipPath="url(#clip0_2_8934)">
@@ -50,7 +49,7 @@ function page() {
                             <h2 className='text-2xl font-medium mt-8'>UX/UI Design</h2>
                             <p className='text-center text-[#111827] opacity-50 mt-2'>Landing pages, Mobile Apps, Websites Design...</p>
                         </div>
-                        <div className='flex flex-col items-center py-12 px-4 bg-white rounded-[10px] w-full hover:shadow-sm hover:scale-105 transition-all duration-200'>
+                        <div className='aspect-square flex flex-col items-center py-12 px-4 bg-white rounded-[10px] size-[280px] hover:shadow-sm hover:scale-105 transition-all duration-200'>
                             <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect y="0.48645" width="50" height="50" rx="10" fill="#9FB2C7" />
                                 <g clipPath="url(#clip0_2_8934)">
